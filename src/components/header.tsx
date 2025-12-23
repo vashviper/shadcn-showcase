@@ -1,5 +1,7 @@
+"use client"
+
 import Link from "next/link"
-import { Cube, List, X } from "@phosphor-icons/react/dist/ssr"
+import { Cube, List } from "@phosphor-icons/react"
 import { ThemeToggle } from "./theme-toggle"
 import { Button } from "@/components/ui/button"
 import {
