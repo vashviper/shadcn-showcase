@@ -6,6 +6,19 @@ A learning project showcasing 10 essential shadcn/ui components built with Next.
 ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-cyan)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
+## Preview
+
+<p align="center">
+  <img src="screenshots/light-mode.png" alt="Light Mode" width="45%">
+  <img src="screenshots/dark-mode.png" alt="Dark Mode" width="45%">
+</p>
+
+### Component Demos
+
+<p align="center">
+  <img src="screenshots/components-ss.png" alt="Component Demos" width="80%">
+</p>
+
 ## Features
 
 - 10 interactive component demos with explanations
