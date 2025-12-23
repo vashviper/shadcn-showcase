@@ -19,7 +19,14 @@ export function DashboardHeader({ title = "Dashboard" }: DashboardHeaderProps) {
       <h1 className="text-lg font-semibold">{title}</h1>
       <div className="ml-auto flex items-center gap-2">
         <ThemeToggle />
-        <Button size="sm" asChild>
+        {/* Icon only on mobile, full button on larger screens */}
+        <Button size="icon" variant="outline" asChild className="sm:hidden">
+          <Link href="/">
+            <House className="size-4" />
+            <span className="sr-only">Back to Home</span>
+          </Link>
+        </Button>
+        <Button size="sm" asChild className="hidden sm:inline-flex">
           <Link href="/">
             <House className="mr-2 size-4" />
             Back to Home
