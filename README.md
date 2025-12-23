@@ -6,7 +6,7 @@ A learning project showcasing 10 essential shadcn/ui components built with Next.
 ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-cyan)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
-**[Live Demo](https://learn-shadcn-showcase.vercel.app/)**
+**[Live Demo](https://shadcn-showcase.vercel.app/)**
 
 ## Preview
 
