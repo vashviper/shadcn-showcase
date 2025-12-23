@@ -15,6 +15,9 @@ export function Header() {
           <a href="#components" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Components
           </a>
+          <a href="/dashboard" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            Dashboard
+          </a>
           <a href="https://ui.shadcn.com/docs" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Docs
           </a>

@@ -19,9 +19,16 @@ A learning project showcasing 10 essential shadcn/ui components built with Next.
   <img src="screenshots/components-ss.png" alt="Component Demos" width="80%">
 </p>
 
+### Dashboard
+
+<p align="center">
+  <img src="screenshots/dashboard-ss.png" alt="Dashboard" width="80%">
+</p>
+
 ## Features
 
 - 10 interactive component demos with explanations
+- **Dashboard page** with sidebar, charts, and data tables
 - Dark/light mode toggle
 - Responsive grid layout
 - Fully accessible components
@@ -40,6 +47,16 @@ A learning project showcasing 10 essential shadcn/ui components built with Next.
 | Progress | Progress bars with animations |
 | Switch | Toggle controls for settings |
 | Dialog | Modal windows for forms and confirmations |
+
+## Dashboard
+
+The project includes a fully functional dashboard at `/dashboard` demonstrating:
+
+- **Collapsible Sidebar** - Navigation with expandable sections
+- **Stat Cards** - Metric cards with trend indicators
+- **Area Chart** - Visitor analytics with date range filtering
+- **Data Table** - Sortable, filterable table with pagination
+- **Responsive Layout** - Adapts to mobile, tablet, and desktop
 
 ## Theme Configuration
 
@@ -74,16 +91,21 @@ src/
 ├── app/
 │   ├── layout.tsx        # Root layout with theme provider
 │   ├── page.tsx          # Main landing page
-│   └── globals.css       # Theme CSS variables
+│   ├── globals.css       # Theme CSS variables
+│   └── dashboard/        # Dashboard route
+│       ├── layout.tsx    # Dashboard layout with sidebar
+│       └── page.tsx      # Dashboard page
 ├── components/
 │   ├── ui/               # shadcn/ui components
 │   ├── showcase/         # Component demo implementations
+│   ├── dashboard/        # Dashboard-specific components
 │   ├── header.tsx        # Site header with nav
 │   ├── hero.tsx          # Hero section
 │   ├── footer.tsx        # Site footer
 │   └── component-card.tsx # Demo wrapper component
 └── lib/
-    └── utils.ts          # Utility functions
+    ├── utils.ts          # Utility functions
+    └── dashboard-data.ts # Mock data for dashboard
 ```
 
 ## Tech Stack
