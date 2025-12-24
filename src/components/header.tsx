@@ -15,6 +15,7 @@ import {
 const navLinks = [
   { href: "#components", label: "Components" },
   { href: "/dashboard", label: "Dashboard" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "https://ui.shadcn.com/docs", label: "Docs", external: true },
   { href: "https://github.com/shadcn/ui", label: "GitHub", external: true },
 ]
