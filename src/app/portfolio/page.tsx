@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { PortfolioHeader } from "@/components/portfolio/portfolio-header"
 import { PortfolioHero } from "@/components/portfolio/portfolio-hero"
 import { ServicesSection } from "@/components/portfolio/services-section"
 import { ProjectsSection } from "@/components/portfolio/projects-section"
@@ -18,25 +19,28 @@ export const metadata: Metadata = {
 
 export default function PortfolioPage() {
   return (
-    <main className="min-h-screen">
-      {/* Hero Section */}
-      <PortfolioHero {...portfolioData.hero} />
+    <>
+      <PortfolioHeader />
+      <main className="min-h-screen">
+        {/* Hero Section */}
+        <PortfolioHero {...portfolioData.hero} />
 
-      {/* Services Section */}
-      <ServicesSection services={portfolioData.services} />
+        {/* Services Section */}
+        <ServicesSection services={portfolioData.services} />
 
-      {/* Portfolio Section */}
-      <ProjectsSection projects={portfolioData.projects} />
+        {/* Portfolio Section */}
+        <ProjectsSection projects={portfolioData.projects} />
 
-      {/* Testimonials Section */}
-      <TestimonialsSection testimonials={portfolioData.testimonials} />
+        {/* Testimonials Section */}
+        <TestimonialsSection testimonials={portfolioData.testimonials} />
 
-      {/* Contact Section */}
-      <ContactSection
-        email={portfolioData.contact.email}
-        phone={portfolioData.contact.phone}
-        socialLinks={portfolioData.socialLinks}
-      />
-    </main>
+        {/* Contact Section */}
+        <ContactSection
+          email={portfolioData.contact.email}
+          phone={portfolioData.contact.phone}
+          socialLinks={portfolioData.socialLinks}
+        />
+      </main>
+    </>
   )
 }
